@@ -19,7 +19,7 @@ for (let i = 0; i < botoes.length; i++) {
 const tempoObjetivos = [
     new Date("2024-12-31T00:00:00"),
     new Date("2024-05-31T00:00:00"),
-    new Date("2025-04-31T00:00:00"),    
+    new Date("2025-04-30T00:00:00"),    
     new Date("2024-12-31T00:00:00")
 ];
 
