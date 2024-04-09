@@ -1,0 +1,86 @@
+:root {
+  --cor-de-fundo: #283149; /* Azul escuro */
+  --vermelho: #DB3A34; /* Vermelho suave */
+  --branco: #FFFFFF; /* Branco */
+  --botao-ativo: #2F89FC; /* Azul claro para destacar */
+  --botao-inativo: rgba(0, 0, 0, 0.1); /* Preto translúcido para destaque */
+  --texto-fundo: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco); /* Texto em branco para contraste */
+  font-family: 'Arial', sans-serif; /* Fonte básica */
+}
+
+.titulo-principal {
+  text-align: center; /* Centralizar título */
+  width: 100%;
+  font-size: 36px; /* Aumentar tamanho do título */
+}
+
+.titulo-principal span {
+  color: var(--vermelho); /* Destaque em vermelho */
+}
+
+.botao {
+  font-family: "Arial", sans-serif;
+  background-color: var(--botao-inativo);
+  color: var(--branco);
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-size: 18px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 4px solid var(--botao-ativo); /* Destaque azul */
+  border-left: 2px solid var(--botao-ativo); /* Destaque azul */
+  border-right: 2px solid var(--botao-ativo); /* Destaque azul */
+  border-top: none;
+  border-radius: 0; /* Remover borda arredondada */
+}
+
+.botao:first-child {
+  border-radius: 0; /* Remover borda arredondada */
+}
+
+.ativo {
+  background-color: var(--botao-ativo);
+  color: var(--cor-de-fundo); /* Texto em azul escuro */
+}
+
+.abas-textos {
+  background-color: var(--texto-fundo);
+  padding: 40px;
+  border-radius: 40px; /* Arredondar cantos */
+}
+
+.botao.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--vermelho); /* Destaque vermelho */
+}
+
+.aba-conteudo.ativo {
+  display: block;
+}
+
+.aba-conteudo {
+  display: none;
+}
+
+.aba-conteudo-titulo-principal {
+  font-size: 28px;
+  text-align: center;
+}
+
+.aba-conteudo-titulo-secundario {
+  text-align: center;
+  color: var(--vermelho); /* Destaque vermelho */
+  text-transform: uppercase;
+}
+
+.contador {
+  font-size: 72px; /* Tamanho da fonte aumentado */
+  text-align: center; /* Alinhamento centralizado */
+  margin-top: 50px; /* Espaçamento superior para centralizá-lo verticalmente */
+}
